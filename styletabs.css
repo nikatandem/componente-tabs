@@ -35,3 +35,6 @@ header{
     text-align: center;
     text-overflow: ellipsis;
 }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
