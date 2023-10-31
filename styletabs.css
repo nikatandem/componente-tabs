@@ -1,0 +1,32 @@
+.tab-list li{
+    display: inline-block;
+    border: double 5px white;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    padding:.5em;
+    text-decoration: none;
+    background-color: rgb(170, 220, 220);
+}
+.tab-list li a{
+    text-decoration: none;
+}
+.tab-list li a:active{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: .4em;
+    box-shadow: 3px 3px 6px;
+    border-radius: 10px;
+}
+.tab-content{
+    background-color: antiquewhite;
+    padding: 1.5em;
+    margin:1% auto;
+    display: flex;
+
+}
+header{
+    background-color: rgb(170, 220, 220);
+    padding: .5em;
+    text-align: center;
+    text-overflow: ellipsis;
+}
