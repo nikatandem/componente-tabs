@@ -11,9 +11,11 @@
     padding:.5em;
     text-decoration: none;
     background-color: rgb(170, 220, 220);
+    text-align: center;
 }
 .tab-list li a{
     text-decoration: none;
+    text-align: center;
 }
 .tab-list li a:active{
     background-color: rgb(255, 255, 255);
@@ -37,4 +39,10 @@ header{
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imagenes{
+display: flex;
+flex-direction: column;
+padding: 0%;
+
 }

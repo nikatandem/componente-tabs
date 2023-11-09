@@ -14,31 +14,81 @@
     <div class="container">
         <div class="tab-component">
             <ul class="tab-list"> <!--lista de pestañas-->
-                <li><a href="#" class="tab-link">Página principal</a></li>
-                <li><a href="#" class="tab-link">Crear QR</a></li>
-                <li><a href="#" class="tab-link">Editar QR</a></li>
-                <li><a href="#" class="tab-link">Eliminar QR</a></li> 
-                <li><a href="#" class="tab-link">Descargar QR</a></li>
-                           
+                <li><a href="#" class="tab-link">URL</a></li>
+                <li><a href="#" class="tab-link">MP3</a></li>
+                <li><a href="#" class="tab-link">VIDEO</a></li>
+                <li><a href="#" class="tab-link">PDF</a></li> 
+                <li><a href="#" class="tab-link">TXT</a></li>
+                <li><a href="#" class="tab-link">LOCALIZACIÓN</a></li>
             </ul>
             <div class="tab-content"> <!-- contenido de pestañas -->
                 <div class="tab-pane">
-                    Contenido de la Tab 1
+                    <div> 
+                        <label for="link">Introduce una URL:</label> 
+                        <input type="url" name="introduceurl" id="link">
+                        <p><small>Introduzca aquí la URL de la página de la que quiera crear un código QR</small></p>  
+                    </div> 
+            
                 </div>
                 <div class="tab-pane">
-                    Contenido de la Tab 2
+                    <div>
+                        <label for="mp3">Selecciona tu archivo Mp3</label>
+                        <input type="file" name="" id="mp3" accept="audio/*">
+                        <p><small>Selecciona un archivo mp3 para generar un código QR</small></p>
+                    </div>
+         
                 </div>
                 <div class="tab-pane">
-                    Contenido de la Tab 3
+                    <div>
+                        <label for="video">Selecciona tu archivo de video</label>
+                        <input type="file" name="" id="video" accept="video/*">
+                        <p><small>Selecciona un archivo de video para generar un código QR</small></p>
+                    </div>
+               
                 </div>
                 <div class="tab-pane">
-                    Contenido de la Tab 4
+                    <div>
+                        <label for="pdf">Selecciona tu archivo PDF</label>
+                        <input type="file" name="" id="pdf" accept=".pdf/*">
+                        <p><small>Selecciona un archivo PDF para generar un código QR</small></p>
+                    </div>
+                    <input type="button" value="Crear QR">
                 </div>
                 <div class="tab-pane">
-                    Contenido de la Tab 5
+                    <div>
+                        <textarea rows="5" cols="50" id="texto">Introduce el texto</textarea>
+                        <p><small>Introduce el texto para generar el código QR</small></p>
+                    </div>
+                    
+                </div>
+                <div class="tab-pane">
+                    <div>
+                        Localización 
+                        <br>
+                        Latitud <input>
+                        <br>
+                        Longitud <input>
+                        <p><small>Introduce la información sobre latitud y longitud para generar el QR</small></p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
+        <div class="decoracion">
+            <h2>Selecciona un diseño para tu QR</h2> 
+            <div>Elige color <input type="color"></div>
+           
+            <div class="imagenes">
+           Elige forma
+           <input type="radio" name="transporte" value="1"><img src="14414920.jpg" width="50px">
+           <input type="radio" name="transporte" value="2"><img src="2819686.png" width="50px">
+           <input type="radio" name="transporte" value="3"><img src="3144541.png" width="50px">
+           </div>
+           <div>Insertar logotipo<input type="file" accept=".png/*"> </div>        
+            <div><button class="btn">Generar qr</button></div>
+           
+         </div>
+     
     </div>
     <script src="script.js"></script>
 </body>
